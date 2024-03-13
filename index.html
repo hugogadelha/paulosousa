@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Say Goodbye to Type 2 Diabetes and Take Control of Your Health!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body class="estilo">
+    <div class="texto textoPrincipal">
+    <h1 class="inter-bold">Say Goodbye to <b>Type 2 Diabetes</b> and Take Control of Your Health!</h1>
+    </div>
+    <!-- <br> -->
+    <div class="divBotao">
+    <img class="img" src="https://i0.wp.com/images-prod.healthline.com/hlcmsresource/images/AN_images/blood-sugar-supplements-1296x728-feature.jpg?w=1575">
+    </div>
+    <p class="inter-regular texto">In This Exclusive Presentation, You Will Discover:</p>
+    <!-- <br> -->
+    <div class="texto">
+    <p class="inter-regular textoPrincipal">The <b>root cause</b> of type 2 diabetes and how to reverse it naturally.
+        Dr. Taylor's <b>simple</b> and <b>effective method</b> that has already helped thousands of people.
+        How you can start applying this method today and improve your health.
+        To learn how you can start using this method today, <b>click the button below!</b></p>
+    </div>
+        <!-- <br> -->
+        <p class="inter-regular texto" id="js-startTimer">Your Spot Expires in<span class="js-timeout padd">2:00</span></p>
+        
+        <div class="divBotao">
+        <a href="#vsl" class="inter-regular texto botao">Click here to watch the video</a>
+        </div>
+
+<script>
+var interval;
+
+function countdown() {
+  clearInterval(interval);
+  interval = setInterval( function() {
+      var timer = $('.js-timeout').html();
+      timer = timer.split(':');
+      var minutes = timer[0];
+      var seconds = timer[1];
+      seconds -= 1;
+      if (minutes < 0) return;
+      else if (seconds < 0 && minutes != 0) {
+          minutes -= 1;
+          seconds = 59;
+      }
+      else if (seconds < 10 && length.seconds != 2) seconds = '0' + seconds;
+
+      $('.js-timeout').html(minutes + ':' + seconds);
+
+      if (minutes == 0 && seconds == 0) clearInterval(interval);
+  }, 1000);
+}
+
+$('#js-startTimer').show(function () {
+  $('.js-timeout').text("2:00");
+  countdown();
+});
+
+$('#js-resetTimer').click(function () {
+  $('.js-timeout').text("2:00");
+  clearInterval(interval);
+});
+</script>
+</body>
+</html>

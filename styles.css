@@ -1,0 +1,87 @@
+
+.padd{
+padding-left: 0.3rem;
+}
+
+.js-timeout{
+  font-weight: 600;
+  color: red;
+}
+
+.inter-regular {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+}
+
+.inter-bold {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+  }
+
+  .inter-black {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+  }
+
+
+  .texto {
+    display: flex;
+    justify-content: center;
+  }
+
+  .textoPrincipal {
+    margin: 0rem 2rem;
+  }
+
+    .divBotao {
+    display: flex;
+    justify-content: center;
+  }
+
+  .botao {
+    background-color: #fee300;
+    text-decoration: none;
+    width: 15rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    color: #000000;
+    font-weight: 600;
+    transition-duration: 0.5s;
+  }
+
+  .botao:hover {
+    transform: scale(1.05);
+  }
+
+  .img {
+    width: 90%;
+    height: auto;
+  }
+
+  @media (min-width: 1200px) {
+    .estilo {
+      margin: 1.5rem 15rem;
+      background-color: #f6f8fa;
+    }
+
+    .img {
+      width: 60%;
+      height: auto;
+    }
+
+    .textoPrincipal {
+    margin: 0rem 10rem;
+  }
+    }
